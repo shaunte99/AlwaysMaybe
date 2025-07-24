@@ -1,0 +1,167 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #1e1e1e;
+  color: #fdfdfd;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(30, 30, 30, 0.7), rgba(30, 30, 30, 0.7)),
+              url('images/713e0456-c7f0-45d4-a37f-f8b7f725f612.png') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.overlay {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffae85; /* soft sunset orange */
+  margin-bottom: 1rem;
+}
+
+
+
+.drop-date {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+#countdown {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.preorder-form input {
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.preorder-form button {
+  background-color: #ff7e5f;
+  border: none;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.preorder-form button:hover {
+  background-color: #feb47b;
+}
+
+.form-note {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  color: #bbb;
+}
+
+/* About Section */
+.about {
+  background: #2a2a2a;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #ffae85;
+}
+
+.about p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.05rem;
+  color: #e0e0e0;
+}
+
+/* Footer */
+footer {
+  background: #181818;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+  line-height: 1.5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.4rem;
+  }
+
+  #countdown {
+    font-size: 1.2rem;
+  }
+
+  .about h2 {
+    font-size: 1.8rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  .drop-date {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  #countdown {
+    font-size: 1.1rem;
+  }
+
+  .preorder-form button,
+  .preorder-form input {
+    font-size: 0.95rem;
+    padding: 0.65rem;
+  }
+
+  .form-note {
+    font-size: 0.85rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
